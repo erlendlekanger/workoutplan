@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Workout Generator</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slotmachine/4.0.0/slotmachine.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slotmachine/4.0.0/slotmachine.min.js"></script>
+</head>
+<body>
+	
+    <div class="container">
+        <button class="draw-btn" onclick="drawCard()">Draw a card</button>
+
+        <div class="animation-container">
+            <!-- Placeholder for animation. You can integrate any animation library or CSS animation here -->
+            <p>Drawing...</p>
+        </div>
+
+        <div class="card-container">
+			<div class="header-message">
+				Remember your daily spin!
+			</div>
+            <!-- Slot machine goes here -->
+            <div class="slot-machine-container">
+                <div class="slot-machine">
+                    <!-- First slot with numbers container -->
+                    <div class="slot">
+                        <div class="numbers-container">
+                            <p class="slot-number">0</p>
+                            <p class="slot-number">1</p>
+                            <p class="slot-number">2</p>
+                            <p class="slot-number">3</p>
+                            <p class="slot-number">4</p>
+                            <p class="slot-number">5</p>
+                            <p class="slot-number">6</p>
+                            <p class="slot-number">7</p>
+                            <p class="slot-number">8</p>
+                            <p class="slot-number">9</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Second slot with numbers container -->
+                    <div class="slot">
+                        <div class="numbers-container">
+                            <p class="slot-number">0</p>
+                            <p class="slot-number">1</p>
+                            <p class="slot-number">2</p>
+                            <p class="slot-number">3</p>
+                            <p class="slot-number">4</p>
+                            <p class="slot-number">5</p>
+                            <p class="slot-number">6</p>
+                            <p class="slot-number">7</p>
+                            <p class="slot-number">8</p>
+                            <p class="slot-number">9</p>
+                        </div>
+                    </div>
+
+                    <!-- Third slot with numbers container -->
+                    <div class="slot">
+                        <div class="numbers-container">
+                            <p class="slot-number">0</p>
+                            <p class="slot-number">1</p>
+                            <p class="slot-number">2</p>
+                            <p class="slot-number">3</p>
+                            <p class="slot-number">4</p>
+                            <p class="slot-number">5</p>
+                            <p class="slot-number">6</p>
+                            <p class="slot-number">7</p>
+                            <p class="slot-number">8</p>
+                            <p class="slot-number">9</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="spin-btn">Spin</button>
+                <p class="jackpot-message"></p>
+            </div>
+
+            <!-- Workout card -->
+            <div class="workout-card">
+                <p class="workout-text"></p>
+            </div>
+			<button class="redraw-btn" onclick="drawCard()">Click to redraw the card</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
